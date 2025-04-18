@@ -1,0 +1,183 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("ChatGPT Image Apr 14, 2025, 12_24_31 AM.png");
+    background-size: cover;  /* Ensures the image covers the full background */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    background: transparent;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(17, 17, 17, 0.1);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #ffffff;
+    font-family :Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+    width: 100%;
+}
+
+label {
+    font-size: 1em;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #ffffff;
+    margin-bottom: 8px;
+    display: block;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #fffcfc;
+    background-color: transparent;
+    border-radius: 5px;
+    font-size: 1em;
+    margin-top: 5px;
+    color: #f8f4f4;
+}
+
+input:focus {
+    border-color: #fffbfb;
+    outline:#f8f4f4;
+    
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: rgb(66, 62, 63);
+    color: rgb(252, 250, 250);
+    border: rgb(253, 248, 248);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+button:hover {
+    background-color: rgb(32, 28, 28);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+.suggestions {
+    margin-top: 20px;
+    padding: 10px;
+    background: transparent;
+    border-radius: 5px;
+    border: 1px solid #111111;
+    text-align: center;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.movie {
+    margin-bottom: 20px;
+}
+
+.movie-poster {
+    max-width: 200px;
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.movie h3 {
+    font-size: 1.1em;
+    color: #f8f4f4;
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+}
+.suggestions {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 16px;
+  }
+  .movie {
+    width: 150px;
+    text-align: center;
+  }
+  .movie img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  .movie img:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+  }
+  .site-header {
+    position: absolute;
+    top: -25px;
+    left: 1px;
+    z-index: 1000;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.site-header {
+    padding: 20px;
+}
+
+.container {
+    margin-top: 80px; /* adjust to push input below logo */
+}
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+        margin-top: 100px;
+    }
+
+    input, button {
+        font-size: 1em;
+    }
+
+    .movie img {
+        max-width: 100px;
+    }
+
+    .site-header .logo {
+        width: 100px;
+    }
+}
+.movie p.overview {
+    font-size: 0.9em;
+    color: #ccc;
+    margin-top: 5px;
+}
+
+

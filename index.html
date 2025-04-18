@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Suggestion App</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- Logo/Header -->
+    <header class="site-header">
+        <img src="ChatGPT Image Apr 14, 2025, 12_54_12 AM.png" alt="CineSuggest Logo" class="logo" />
+    </header>
+
+    <div class="container">
+        <h1>Suggest me movie...</h1>
+        <div class="form-group">
+            
+            <label for="industrySelect">Choose movie industry:</label>
+            <select id="industrySelect">
+                <option value="">Select Industry</option>
+                <option value="Bollywood">Bollywood</option>
+                <option value="Hollywood">Hollywood</option>
+              </select>
+            <label for="userInput">Enter a genre or keyword:</label>
+            <input type="text" id="userInput" placeholder="e.g., action, drama, sci-fi..." />
+        </div>
+        <button id="suggestButton">Get Suggestions</button>
+        <div id="suggestions" class="suggestions"></div>
+    </div>
+
+    <script src="index.js"></script>
+    
+</body>
+</html>
+
+
